@@ -28,7 +28,8 @@ a {
 
 p:nth-child(1) a {
   color: #FFDD1B;
-  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: 'Comfortaa', cursive;
 }
 
 p:nth-child(1) a:hover {
