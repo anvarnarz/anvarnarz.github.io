@@ -74,10 +74,15 @@ p a:hover {
 it should always be at the center of the browser */
 .wrapper {
   position: absolute;
-  bottom: 50%;
+  bottom: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 440px;
+}
+
+.container{
+  height: 80px;
+  margin-bottom: 20px;
 }
 
 /* Style the Un-order list by setting its list-style to none */
@@ -176,12 +181,24 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
+/* python */
+.wrapper ul li:hover.python {
+  border: 5px solid #FFD43B;
+  box-shadow: 0 0 15px #FFD43B;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .devicon-python-plain {
+  color: #FFD43B;
+  text-shadow: 0 0 15px #FFD43B;
+  transition: all 0.5s ease;
+}
 
 /* media queries */
 
 @media screen and (max-width: 640px){
   .wrapper {
-      width: 350px;
+    width: 350px;
   }
   .wrapper ul li{
       margin-top: 10px;
@@ -194,7 +211,7 @@ to align it properly */
 
 @media screen and (max-width: 340px){
   .wrapper {
-      width: 150px;
+    width: 150px;
   }
   .wrapper ul li{
       margin:15px;
@@ -212,6 +229,13 @@ to align it properly */
     font-size: 3.5em;
   }
 }
+
+@media (pointer:coarse){
+  .wrapper {
+    bottom: 40%;
+  }
+}
+
 
 /* youtube link */
 .youtube{
